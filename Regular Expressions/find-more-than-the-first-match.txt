@@ -1,0 +1,5 @@
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; // Regex with global and case-insensitive flags
+let result = twinkleStar.match(starRegex);
+
+console.log(result); // Output: ["Twinkle", "twinkle"]

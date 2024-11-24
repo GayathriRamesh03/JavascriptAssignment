@@ -1,0 +1,6 @@
+let exampleStr = "run sun fun pun nun bun";
+let unRegex = /.un/; // Regex using the wildcard character
+
+// Testing if the pattern matches
+let result = unRegex.test(exampleStr);
+console.log(result); // Output: true

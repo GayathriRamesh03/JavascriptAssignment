@@ -1,0 +1,4 @@
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Matches all vowels (both upper- and lowercase)
+let result = quoteSample.match(vowelRegex); // Extracts all matching vowels
+console.log(result); // Output: [ 'e', 'a', 'e', 'o', 'u', 'i', 'e', 'a', 'o', 'e', 'o', 'e', 'I', 'a', 'e', 'o', 'o', 'e', 'i', 'o', 'i', 'e', 'i' ]

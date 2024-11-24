@@ -1,0 +1,5 @@
+let myString = "freeCodeCamp is awesome!";
+let fccRegex = /freeCodeCamp/i; // Regex to match "freeCodeCamp" in any case
+let result = fccRegex.test(myString);
+
+console.log(result); // Output: true
