@@ -1,0 +1,9 @@
+function subtract(x, y) {
+  return x - y;
+}
+export default function subtract(x, y) {
+  return x - y;
+}
+import subtract from './module_name.js';
+
+console.log(subtract(7, 4)); // Outputs: 3
