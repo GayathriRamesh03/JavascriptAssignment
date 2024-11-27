@@ -1,0 +1,30 @@
+function Animal(name) {
+  this.name = name;
+}
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Cat(name) {
+  Animal.call(this, name);
+}
+
+Cat.prototype = Object.create(Animal.prototype);
+Cat.prototype.constructor = Cat;
+
+function Bear(name) {
+  Animal.call(this, name);
+}
+
+Bear.prototype = Object.create(Animal.prototype);
+Bear.prototype.constructor = Bear;
+
+let cat = new Cat("Whiskers");
+let bear = new Bear("Yogi");
+
+cat.eat();
+bear.eat();
