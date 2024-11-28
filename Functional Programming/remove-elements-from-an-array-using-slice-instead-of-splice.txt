@@ -1,0 +1,8 @@
+function nonMutatingSplice(cities) {
+  // Use slice to return the first 3 items of the cities array without mutating the original array
+  return cities.slice(0, 3);
+}
+
+console.log(nonMutatingSplice(["Chicago", "Delhi", "Islamabad", "London", "Berlin"])); 
+// ["Chicago", "Delhi", "Islamabad"]
+

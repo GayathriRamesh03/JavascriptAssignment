@@ -1,0 +1,12 @@
+// The global variable
+let fixedValue = 4;
+
+// Only change code below this line
+function incrementer(value) {
+  return value + 1;
+}
+// Only change code above this line
+
+// Test the function
+console.log(incrementer(fixedValue)); // Expected output: 5
+console.log(fixedValue); // Expected output: 4 (unchanged)

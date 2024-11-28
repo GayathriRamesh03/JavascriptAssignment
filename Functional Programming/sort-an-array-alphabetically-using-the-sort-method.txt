@@ -1,0 +1,8 @@
+function alphabeticalOrder(arr) {
+  // Use the sort method to sort the array in alphabetical order
+  return arr.sort();
+}
+
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"])); // Should return ["a", "a", "c", "d", "g", "z"]
+console.log(alphabeticalOrder(["x", "h", "a", "m", "n", "m"])); // Should return ["a", "h", "m", "m", "n", "x"]
+console.log(alphabeticalOrder(["a", "a", "a", "a", "x", "t"])); // Should return ["a", "a", "a", "a", "t", "x"]

@@ -1,0 +1,8 @@
+function splitify(str) {
+  // Use split with a regular expression that matches any non-word characters (such as spaces and punctuation)
+  return str.split(/\W+/);
+}
+
+console.log(splitify("Hello World,I-am code")); // ["Hello", "World", "I", "am", "code"]
+console.log(splitify("Earth-is-our home")); // ["Earth", "is", "our", "home"]
+console.log(splitify("This.is.a-sentence")); // ["This", "is", "a", "sentence"]

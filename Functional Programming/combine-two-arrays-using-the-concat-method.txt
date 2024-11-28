@@ -1,0 +1,8 @@
+function nonMutatingConcat(original, attach) {
+  // Use concat to combine the two arrays without mutating them
+  return original.concat(attach);
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+console.log(nonMutatingConcat(first, second)); // [1, 2, 3, 4, 5]

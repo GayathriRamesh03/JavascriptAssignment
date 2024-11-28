@@ -1,0 +1,11 @@
+const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+  // Concatenate an empty array to avoid mutating the original array and then sort it
+  return arr.concat().sort((a, b) => a - b);
+}
+
+console.log(nonMutatingSort(globalArray)); // Should return [2, 3, 5, 6, 9]
+console.log(nonMutatingSort([1, 30, 4, 21, 100000])); // Should return [1, 4, 21, 30, 100000]
+console.log(nonMutatingSort([140000, 104, 99])); // Should return [99, 104, 140000]
+

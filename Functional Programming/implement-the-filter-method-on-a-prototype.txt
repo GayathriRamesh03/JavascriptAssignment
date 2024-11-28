@@ -1,0 +1,12 @@
+Array.prototype.myFilter = function(callback) {
+  const newArray = [];
+  // Loop through each element of the array using forEach (or a simple for loop)
+  for (let i = 0; i < this.length; i++) {
+    // Apply the callback function to each element
+    if (callback(this[i], i, this)) {
+      // If the callback returns true, add the element to the new array
+      newArray.push(this[i]);
+    }
+  }
+  return newArray;
+};

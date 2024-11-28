@@ -1,0 +1,9 @@
+function checkPositive(arr) {
+  return arr.every(function(currentValue) {
+    return currentValue > 0;  // Check if the current value is positive
+  });
+}
+
+console.log(checkPositive([1, 2, 3, -4, 5])); // false
+console.log(checkPositive([1, 2, 3, 4, 5]));  // true
+console.log(checkPositive([1, -2, 3, -4, 5])); // false

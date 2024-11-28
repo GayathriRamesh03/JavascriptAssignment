@@ -1,0 +1,9 @@
+function sentensify(str) {
+  // First, split the string by non-word characters (e.g., hyphens, commas, periods)
+  // Then, use join to combine the array elements with a space
+  return str.split(/[\W_]+/).join(" ");
+}
+
+console.log(sentensify("May-the-force-be-with-you")); // "May the force be with you"
+console.log(sentensify("The.force.is.strong.with.this.one")); // "The force is strong with this one"
+console.log(sentensify("There,has,been,an,awakening")); // "There has been an awakening"

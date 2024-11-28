@@ -1,0 +1,12 @@
+function urlSlug(title) {
+  return title
+    .trim()                    // Remove leading and trailing spaces
+    .split(/\s+/)              // Split the string into an array of words, handling multiple spaces
+    .map(word => word.toLowerCase()) // Convert each word to lowercase
+    .join("-");                // Join the words back together with hyphens
+}
+
+console.log(urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone")); // "a-mind-needs-books-like-a-sword-needs-a-whetstone"
+console.log(urlSlug("Winter Is Coming")); // "winter-is-coming"
+console.log(urlSlug(" Hold The Door ")); // "hold-the-door"
+

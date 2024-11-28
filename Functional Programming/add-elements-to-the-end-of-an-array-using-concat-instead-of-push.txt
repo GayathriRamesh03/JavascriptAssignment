@@ -1,0 +1,8 @@
+function nonMutatingPush(original, newItem) {
+  // Use concat to merge newItem to the end of original array without mutating either array
+  return original.concat(newItem);
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+console.log(nonMutatingPush(first, second)); // [1, 2, 3, 4, 5]
